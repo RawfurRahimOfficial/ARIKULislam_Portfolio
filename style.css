@@ -1,0 +1,1517 @@
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Roboto, serif;
+    font-weight: 400;
+}
+
+body {
+    overflow-x: hidden;
+    
+}
+
+:root {
+    --bgColor1: #B9FF66;
+    --bgColor2: #191A23;
+    --bgColor3: #F3F3F3;
+}
+
+.Container {
+    width: 90vw;
+    height: inherit;
+    margin: auto;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0px;
+}
+
+.NavLogo {
+    font-size: 24px;
+    width: 25%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    gap: 10px;
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.NavLogo i {
+    display: inline-block;
+    font-size: 32px;
+    position: static;
+}
+
+nav .deskTopUl {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    height: inherit;
+    align-items: center;
+    gap: 12px;
+}
+
+nav .deskTopUl li {
+    list-style: none;
+    height: inherit;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+nav .deskTopUl li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 22px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+nav .deskTopUl li a:hover {
+    background-color: rgb(185, 255, 102);
+}
+
+nav .mobileUl {
+    display: none;
+    width: 60%;
+    justify-content: flex-end;
+    height: inherit;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 0.255);
+    backdrop-filter: blur(15px);
+}
+
+nav .mobileUl li {
+    list-style: none;
+    height: inherit;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+nav .mobileUl li a {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 500;
+    color: black;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+nav .mobileUl li a:hover {
+    background-color: var(--bgColor1);
+}
+
+nav .manu {
+    font-size: 23px;
+    display: none;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+nav .close {
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+}
+
+
+
+nav button {
+    padding: 10px 35px;
+    border-radius: 8px;
+    margin-left: 20px;
+    position: relative;
+    background-color: var(--bgColor2);
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+nav button:hover {
+    background-color: var(--bgColor1);
+    color: black;
+}
+
+
+
+.BannerContent {
+    height: calc(100% - 270px);
+    width: 100%;
+    display: flex;
+}
+
+.BannerLeft {
+    width: 40%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.BannerLeft h1 {
+    font-family: "Sour Gummy", serif;
+    font-size: 65px;
+    line-height: 72px;
+    font-weight: 500;
+    position: relative;
+}
+
+.BannerLeft h1 span {
+    color: var(--bgColor1);
+    position: relative;
+}
+
+.BannerLeft h1 span::after {
+    content: "identity";
+    position: absolute;
+    left: -3px;
+    top: 6px;
+    color: black;
+    z-index: -1;
+}
+
+.BannerLeft p {
+    font-size: 19px;
+    line-height: 28px;
+    margin-top: 12px;
+    margin-bottom: 37px;
+}
+
+.BannerLeft button {
+    padding: 15px 55px;
+    border-radius: 8px;
+    border: none;
+    background: var(--bgColor2);
+    z-index: 99;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.BannerLeft button:hover {
+    background-color: var(--bgColor1);
+    color: black;
+}
+
+
+.BannerRight {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.BannerRight img {
+    position: absolute;
+    right: 0px;
+    width: 70%;
+    top: 0px;
+}
+
+.BannerLogo {
+    width: 100%;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+.BannerLogo img {
+    width: 135px;
+    filter: brightness(0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+.ServicesSection {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 50px;
+}
+
+.ServicesContent {
+    width: inherit;
+    height: inherit;
+}
+
+.Services {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Services h1 {
+    background-color: var(--bgColor1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+.Services p {
+    font-size: 18px;
+    line-height: 25px;
+    width: 50%;
+}
+
+
+
+
+
+.BoxContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.Box {
+    width: 45%;
+    height: 260px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 2px black;
+    display: flex;
+    position: relative;
+    padding: 25px;
+    flex-shrink: 0;
+}
+
+.Box:nth-child(1),
+.Box:nth-child(4) {
+    background-color: var(--bgColor3);
+}
+
+.Box:nth-child(1) h1,
+.Box:nth-child(4) h1 {
+    background-color: var(--bgColor1);
+}
+
+
+.Box:nth-child(2),
+.Box:nth-child(5) {
+    background-color: var(--bgColor1);
+}
+
+.Box:nth-child(2) h1,
+.Box:nth-child(5) h1 {
+    background-color: white;
+}
+
+
+.Box:nth-child(3),
+.Box:nth-child(6) {
+    background-color: var(--bgColor2);
+}
+
+.Box:nth-child(3) h1,
+.Box:nth-child(6) h1 {
+    background-color: white;
+}
+
+.Box:nth-child(3) a,
+.Box:nth-child(6) a {
+    color: white;
+}
+
+.Box:nth-child(3) a i,
+.Box:nth-child(6) a i {
+    color: var(--bgColor2);
+    background-color: white;
+}
+
+.BoxLeft {
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+
+
+.BoxLeft h1 {
+    width: 90%;
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    padding: 1px 9px;
+}
+
+.BoxLeft a {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+}
+
+.BoxLeft a i {
+    font-size: 23px;
+    padding: 6px;
+    background-color: var(--bgColor2);
+    color: var(--bgColor1);
+    border-radius: 50%;
+}
+
+.BoxLeft a p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.BoxRight {
+    width: 55%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.BoxRight img {
+    width: 200px;
+}
+
+
+
+
+
+
+
+.ProposalSection {
+    width: 100%;
+    height: max-content;
+    margin-top: 120px;
+}
+
+.ProposalContent {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bgColor3);
+    border-radius: 50px;
+    padding: 66px 82px;
+}
+
+
+.PCLeft {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.PCRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.PCLeft h1 {
+    font-size: 35px;
+}
+
+.PCLeft p {
+    font-size: 19px;
+    margin-top: 26px;
+    margin-bottom: 46px;
+    line-height: 25px;
+}
+
+.PCLeft button {
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bgColor2);
+    color: white;
+}
+
+
+.PCLeft button:hover {
+    color: black;
+    background-color: var(--bgColor1);
+}
+
+.PCRight img {
+    width: 545px;
+    position: absolute;
+    right: -150px;
+}
+
+
+
+
+
+
+
+.CaseStudiesSection {
+    width: 100%;
+    max-height: 100%;
+    margin-top: 130px;
+}
+
+.CaseStudies {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.CaseStudies h1 {
+    background-color: var(--bgColor1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+.CaseStudies p {
+    font-size: 18px;
+    line-height: 25px;
+    width: 50%;
+}
+
+.CSBoxContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 75px 0px;
+    background-color: var(--bgColor2);
+    border-radius: 50px;
+    margin-top: 60px;
+}
+
+.CSBox {
+    width: 33%;
+    padding: 0px 50px;
+    color: white;
+}
+
+.CSBox P {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.CSBox a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 33px;
+    color: var(--bgColor1);
+}
+
+.CSBox a i {
+    font-size: 25px;
+}
+
+
+.CSBox:nth-child(2) {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+
+
+
+
+.ContactSection {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+    margin-top: 100px;
+}
+
+
+.ContactTittle {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ContactTittle h1 {
+    background-color: var(--bgColor1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+.ContactTittle p {
+    font-size: 18px;
+    line-height: 25px;
+    width: 50%;
+}
+
+
+.FromContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: var(--bgColor3);
+    max-height: 100%;
+    border-radius: 60px;
+}
+
+form {
+    width: 60%;
+    padding: 45px 111px 45px 200px;
+}
+
+#NameInput,
+#EmaileInput,
+#MassageTextarea,
+#SubmitInput {
+    width: 100%;
+    padding: 13px 20px;
+    border-radius: 12px;
+    border: 1px solid #191a235d;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+#MassageTextarea {
+    height: 150px;
+}
+
+#NameLable,
+#EmailLable,
+#MassageLable {
+    width: 100%;
+    margin-top: 3px;
+    padding: 2px;
+}
+
+#SubmitInput {
+    background-color: var(--bgColor2);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+}
+
+#SubmitInput:hover {
+    background-color: var(--bgColor1);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+.FromRight {
+    width: 40%;
+    height: inherit;
+    position: relative;
+}
+
+.FromRight img {
+    width: 500px;
+    position: absolute;
+    right: -233px;
+    top: 53px;
+}
+
+.RadioBox {
+    margin-bottom: 28px;
+    display: flex;
+}
+
+label p {
+    margin-left: 3px;
+    margin-bottom: 3px;
+    font-size: 17px;
+}
+
+
+/* Custom Radio Button */
+
+.custom-radio-btn {
+    --size: 25px;
+    min-width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    margin: 0 10px;
+    position: relative;
+    padding-left: var(--size);
+}
+
+.custom-radio-btn input {
+    display: none;
+}
+
+
+.custom-radio-btn .label {
+    margin-left: 5px;
+}
+
+.custom-radio-btn:first-child {
+    margin-left: 0;
+}
+
+
+
+.custom-radio-btn .checkmark {
+    --gap: -1px;
+    --border: 3px;
+    --check-color: var(--bgColor1);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    border: var(--border) solid #444;
+    padding: var(--gap);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.custom-radio-btn.left .checkmark {
+    left: auto;
+    right: 0;
+}
+
+.custom-radio-btn input:checked~.checkmark {
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(circle at center,
+            var(--check-color) calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2),
+            rgba(255, 255, 255, 0) 0);
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    max-height: 100%;
+    margin-top: 100px;
+    overflow-y: hidden;
+}
+
+.FooterContent {
+    max-height: 100%;
+    background-color: var(--bgColor2);
+    color: white;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    padding: 60px 60px 0px 60px;
+}
+
+
+.FooterNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FNLogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.FNLogo i {
+    font-size: 26px;
+}
+
+.FNLogo h1 {
+    font-size: 33px;
+}
+
+
+.FNul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.FNul li{
+    list-style: none;
+}
+
+.FNul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 17px;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.FNul li a:hover{
+    color: black;
+    background-color: var(--bgColor1);
+}
+
+
+.FNIcon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.FNIcon i{
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.FNIcon i:hover{
+    background-color: var(--bgColor1);
+    color: black;
+}
+
+
+
+.FooterCenter{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.FCLeft{
+    width: 50%;
+}
+
+.FCLeft h3{
+    width: fit-content;
+    color: black;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: var(--bgColor1);
+    padding: 5px 12px;
+}
+.FCLeft p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.FCLeft p:last-child{margin-bottom: 0;}
+
+
+
+
+
+.PCRight{
+    width: 32%;
+    /* background-color: #292A32; */
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+.PCRight button{
+ font-size: 22px;
+ padding: 15px 77px;
+ border-radius: 10px;
+ background-color: var(--bgColor1);
+ color: black;
+ border: none;
+ font-weight: 600;
+ transition: all 0.3s;
+}
+
+.PCRight button:hover{
+    background-color: var(--bgColor2);
+    color: white;
+}
+
+
+
+.FooterBottom{
+    border-top: 1px solid white;
+    padding: 40px;
+    display: flex;
+    gap: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    nav .deskTopUl {
+        display: none;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    nav .manu {
+        display: inline-block;
+        margin-right: 1px;
+    }
+
+    nav .mobileUl {
+        display: inline-block;
+        flex-direction: column;
+        gap: 0px;
+        top: -270px;
+        position: absolute;
+        width: inherit;
+        height: fit-content;
+        padding-top: 60px;
+        border-radius: 20px;
+        z-index: 99;
+    }
+
+    nav .mobileUl li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.063);
+        width: inherit;
+        padding: 0px;
+        border-radius: 20px;
+    }
+
+    nav .mobileUl li a {
+        font-size: 18px;
+        width: inherit;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .NavLogo {
+        align-items: center;
+        width: 50%;
+        height: inherit;
+        justify-content: flex-start;
+    }
+
+    .NavLogo h1 {
+        font-size: 25px;
+    }
+
+    .NavLogo i {
+        font-size: 26px;
+        gap: 3px;
+    }
+
+    .BannerContent {
+        height: calc(100% - 270px);
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .BannerLeft {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        position: absolute;
+        top: 0px;
+    }
+
+    .BannerLeft h1 {
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 500;
+        position: absolute;
+        top: 10px;
+        width: inherit;
+    }
+
+    .BannerLeft p {
+        font-size: 17px;
+        line-height: 28px;
+        margin-top: 12px;
+        margin-bottom: 37px;
+        position: absolute;
+        bottom: -155px;
+        width: 100%;
+    }
+
+    .BannerLeft button {
+        padding: 15px 55px;
+        border-radius: 8px;
+        position: absolute;
+        bottom: -190px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .BannerLeft button a {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .BannerRight {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 130px;
+        left: -70px;
+    }
+
+    .BannerRight img {
+        width: 75%;
+    }
+
+    .BannerLogo {
+        width: 100%;
+        padding: 60px 0px;
+        position: absolute;
+        bottom: -210px;
+        flex-wrap: wrap;
+    }
+
+    .BannerLogo img {
+        width: 135px;
+    }
+
+
+
+
+
+
+
+
+    .ServicesSection {
+        margin-top: 206px;
+    }
+
+
+    .Services {
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    .Services h1 {
+        padding: 15px 20px;
+        border-radius: 8px;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Services p {
+        font-size: 15px;
+        line-height: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .BoxContent {
+        gap: 18px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .Box {
+        width: 100%;
+        height: 188px;
+        border-radius: 30px;
+        padding: 17px;
+        flex-shrink: 0;
+    }
+
+
+
+    .BoxLeft h1 {
+        width: 100%;
+        font-size: 20px;
+        top: 0px;
+        left: 0px;
+        border-radius: 10px;
+        padding: 1px 9px;
+    }
+
+    .BoxLeft a {
+        bottom: 0px;
+        left: 0px;
+        gap: 9px;
+    }
+
+    .BoxLeft a i {
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .BoxLeft a p {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+
+    .BoxRight {
+        width: 55%;
+        height: 100%;
+    }
+
+
+    .BoxRight img {
+        width: 160px;
+    }
+
+
+
+
+
+
+
+    .ProposalSection {
+        margin-top: 70px;
+        height: max-content;
+    }
+
+    .ProposalContent {
+        border-radius: 70px;
+        padding: 12px 34px 46px 34px;
+        flex-direction: column-reverse;
+    }
+
+
+    .PCLeft {
+        width: 100%;
+    }
+
+
+
+    .PCRight {
+        width: 100%;
+        position: static;
+    }
+
+
+
+    .PCLeft h1 {
+        font-size: 27px;
+    }
+
+    .PCLeft p {
+        font-size: 14px;
+        margin-top: 19px;
+        margin-bottom: 25px;
+        line-height: 23px;
+    }
+
+    .PCLeft button {
+        padding: 11px 14px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+
+
+    .PCRight img {
+        width: 222px;
+        right: -72px;
+        margin-bottom: 21px;
+        position: static;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .CaseStudiesSection {
+        width: 100%;
+        height: 100%;
+        margin-top: 70px;
+    }
+
+    .CaseStudies {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .CaseStudies h1 {
+        padding: 15px 20px;
+        border-radius: 8px;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .CaseStudies p {
+        font-size: 17px;
+        line-height: 23px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .CSBoxContent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 4px 0px;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .CSBox {
+        width: 100%;
+        padding: 32px 30px;
+    }
+
+    .CSBox P {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .CSBox a {
+        gap: 5px;
+        margin-top: 19px;
+        font-size: 15px;
+    }
+
+    .CSBox a i {
+        font-size: 20px;
+    }
+
+
+    .CSBox:nth-child(2) {
+        border-right: 0;
+        border-left: 0;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+
+
+
+
+
+
+
+    .ContactSection {
+        margin-top: 50px;
+    }
+
+
+    .ContactTittle {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .ContactTittle h1 {
+        padding: 15px 20px;
+        border-radius: 8px;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ContactTittle p {
+        font-size: 18px;
+        line-height: 28px;
+        width: 70%;
+        text-align: center;
+    }
+
+
+    .FromContent {
+        margin-top: 23px;
+        max-height: 100%;
+        border-radius: 60px;
+    }
+
+    form {
+        width: 100%;
+        padding: 40px 36px;
+    }
+
+    #NameInput,
+    #EmaileInput,
+    #MassageTextarea,
+    #SubmitInput {
+        width: 100%;
+        padding: 13px 20px;
+        border-radius: 12px;
+        margin-bottom: 9px;
+        margin-top: 3px;
+    }
+
+    #MassageTextarea {
+        height: 150px;
+    }
+
+    #NameLable,
+    #EmailLable,
+    #MassageLable {
+        width: 100%;
+        margin-top: 3px;
+        padding: 2px;
+    }
+
+    #SubmitInput {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+
+
+    .FromRight {
+        display: none;
+    }
+
+    .FromRight img {
+        width: 500px;
+
+        right: -230px;
+        top: 53px;
+    }
+
+    .RadioBox {
+        margin-bottom: 12px;
+    }
+
+
+
+
+
+
+    
+footer {
+    width: 100%;
+    max-height: fit-content;
+    margin-top: 65px;
+    background-color: var(--bgColor2);
+    position: relative;
+    padding: 23px 12px;
+}
+
+.FooterContent {
+    max-height: 100%;
+    color: white;
+    padding: 0px;
+    position: relative;
+}
+
+
+.FooterNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FNLogo {
+    gap: 8px;
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 600;
+    font-style: normal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.FNLogo i {
+    font-size: 22px;
+}
+
+.FNLogo h1 {
+    font-size: 28px;
+}
+
+
+.FNul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.FNul li a{
+    font-size: 18px;
+    padding: 4px 10px;
+}
+
+.FNIcon{
+    gap: 30px;
+    position: absolute;
+    bottom: -399px;
+}
+
+.FNIcon i{
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+
+.FooterCenter{
+    width: 100%;
+    margin-top: 13px;
+    margin-bottom: 85px;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.FCLeft{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.FCLeft h3{
+    border-radius: 8px;
+    font-size: 17px;
+    padding: 5px 12px;
+    margin-bottom: 13px;
+}
+.FCLeft p{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+
+
+
+
+.PCRight{
+    width: 100%;
+    padding: 35px;
+}
+
+.PCRight button{
+ font-size: 18px;
+ padding: 14px 57px;
+ border-radius: 10px;
+}
+
+
+
+.FooterBottom{
+    padding: 40px;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
